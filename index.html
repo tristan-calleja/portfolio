@@ -19,6 +19,11 @@
             document.documentElement.className += ' no-touch';
         }
     </script>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="/assets/css/styles.css" rel="stylesheet">
 </head>
@@ -54,22 +59,133 @@
             </div>
         </div>
         <footer class="footer [ align-right ]">
-            <div class="colophon"><a href="//twitter.com/" class="colophon__link" target="_blank"><img
-                        src="/assets/images/about.svg" width="64" alt="An icon for Me"
-                        class="colophon__image"><span class="colophon__text">About</span></a><a
-                    href="//instagram.com/" class="colophon__link" target="_blank"><img src="/assets/images/lego.svg"
-                        width="64" alt="An icon for Instagram" class="colophon__image"><span
-                        class="colophon__text">Projects</span></a><a href="//github.com/tristan-calleja"
-                    class="colophon__link" target="_blank"><img src="/assets/images/rocket.svg" width="64" alt="An icon for Github"
-                        class="colophon__image"><span class="colophon__text">Github</span></a></div>
-            <div class="ghost"><img src="/assets/images/logo.svg" class="ghost__jacques" alt="My logo!"
-                    width="128" height="128"></div>
+            <div class="colophon">
+                
+                <button class="colophon__link" data-toggle="modal" data-target="#portfolioModal1">
+                    <img src="/assets/images/about.svg" width="64" alt="An icon for Me"
+                    class="colophon__image"><span class="colophon__text" data-toggle="modal" data-target="#myModal">About</span>
+                </button>
+                
+                <button class="colophon__link" >
+                    <img src="/assets/images/lego.svg"  width="64" alt="An icon for Instagram" class="colophon__image"><span
+                    class="colophon__text">Projects</span>
+                </button>
+                
+                <a href="//github.com/tristan-calleja" class="colophon__link" target="_blank">
+                    <img src="/assets/images/rocket.svg" width="64" alt="An icon for Github"
+                    class="colophon__image"><span class="colophon__text">Github</span>
+                </a>
+                
+            </div>
+
+            <div class="ghost">
+                <img src="/assets/images/logo.svg" class="ghost__jacques" alt="My logo!" width="128" height="128">
+            </div>
+
         </footer>
     </div>
     <div class="mask" aria-hidden="true">
         <div class="mask__upper"></div>
         <div class="mask__lower"></div>
     </div>
+
+
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-secondary">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal1Label">My Details</h2>
+                                    <h5 class="modal__text">
+                                        1 Zion Close, Unit 07-02 · Singapore 247813 · +65 9076 5189 ·
+                                        <a href="mailto:calleja.tristan@gmail.com" class="black__bg__link">calleja.tristan@gmail.com</a>
+                                    </h5>
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal1Label">A Few Things About Me:</h2>
+                                    <!-- Portfolio Modal - Text-->
+                                    <ul class="text-left modal__text mb-2">
+                                            <li>I am French and spent the past 6 years in London, UK before arriving in Singapore in January '20.</li>
+                                            <li>Previously, I worked as Operations Manager and Sales Manager for one of the leading Fine Wine & Spirits supplier.</li>
+                                            <li>An active participant in the development and use of new technologies in my previous roles, I became increasingly attracted to programming.</li>
+                                            <li>I attended a course in Software Engineering at General Assembly and graduated in August '20</li>
+                                            <li>After the course, I was offered a position at General Assembly as Instructional Assistant. I helped two batches of students on making the same transition I did, explaining the same concepts I learned.</li>
+                                    </ul>
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal1Label">My Skillset:</h2>
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="d-flex justify-content-center">
+                                        <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                    </ul>
+
+                    
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            HTML 5, CSS 3 and JavaScript
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Node.js
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Expressjs / EJS
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Passportjs
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            React
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            MongoDB
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Ruby and Ruby on Rails
+                        </li>
+                    </ul>
+                    </br>
+                    <div class="subheading mb-3">Other</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Tools - Git, Github, Heroku, Figma, Trello, Slack
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Management and Sales
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Soft Skills - Acute communication skills, Problem solving, Strong business acumen
+                        </li>
+                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -86,6 +202,9 @@
         ga('create', 'UA-62353572-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
