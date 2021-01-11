@@ -477,6 +477,8 @@ a:active {
     outline: none
 }
 
+
+
 .text-link {
     color: #4c3d6d;
     display: inline-block;
@@ -922,14 +924,14 @@ button {
     align-self: center;
     flex: 1;
     padding-top: 0.6666666667rem;
-    text-align: left
+    text-align: left;
 }
 
 .colophon__link {
     color: #4c3d6d;
     display: block;
     padding: 0 0 0.6666666667rem;
-    width: 100%
+    /* width: 100% */
 }
 
 .colophon__link:last-child {
@@ -1323,7 +1325,7 @@ button {
     display: none;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
     outline: 0;
   }
   
@@ -1570,6 +1572,49 @@ button {
       text-decoration: underline;
   }
 
-  .modal__hover__link:hover{
-      color: #343a40;
+  .modal__text > .black__bg__link:hover{
+      color: #4c3d6d;
+      opacity: 0.6;
+  }
+
+  .details{
+    font-weight: 500;
+  }
+
+  .about__me{
+    margin: 0.5em 0;
+    font-weight: 500;
+  }
+
+  .about__me__sub{
+    margin: 1em 0;
+    font-weight: 800;
+  }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    /* color: #444; */
+    color: #4c3d6d;
+    font-size: large;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
   }

@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link href="/assets/css/styles.css" rel="stylesheet">
 </head>
 
@@ -63,12 +64,12 @@
                 
                 <button class="colophon__link" data-toggle="modal" data-target="#portfolioModal1">
                     <img src="/assets/images/about.svg" width="64" alt="An icon for Me"
-                    class="colophon__image"><span class="colophon__text" data-toggle="modal" data-target="#myModal">About</span>
+                    class="colophon__image"><span class="colophon__text">About</span>
                 </button>
                 
-                <button class="colophon__link" >
-                    <img src="/assets/images/lego.svg"  width="64" alt="An icon for Instagram" class="colophon__image"><span
-                    class="colophon__text">Projects</span>
+                <button class="colophon__link"  data-toggle="modal" data-target="#portfolioModal2">
+                    <img src="/assets/images/lego.svg"  width="64" alt="An icon for Instagram" class="colophon__image">
+                    <span class="colophon__text">Projects</span>
                 </button>
                 
                 <a href="//github.com/tristan-calleja" class="colophon__link" target="_blank">
@@ -97,86 +98,105 @@
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"><i class="fas fa-times"></i></span>
                     </button>
-                    <div class="modal-body text-center">
+                    <div class="modal-body">
                         <div class="container">
-                            <div class="row justify-content-center">
+                            <div class="row">
                                 <div class="col-lg-8 text-secondary">
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal1Label">My Details</h2>
-                                    <h5 class="modal__text">
+                                    <h5 class="modal__text details">
                                         1 Zion Close, Unit 07-02 · Singapore 247813 · +65 9076 5189 ·
-                                        <a href="mailto:calleja.tristan@gmail.com" class="black__bg__link">calleja.tristan@gmail.com</a>
+                                        <a href="mailto:calleja.tristan@gmail.com" class="black__bg__link modal__hover__link">calleja.tristan@gmail.com</a>  ·
+                                        <a href="https://www.linkedin.com/in/tristan-calleja/" target="_blank" class="black__bg__link modal__hover__link">Linked<i class="fab fa-linkedin"></i></a>
                                     </h5>
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal1Label">A Few Things About Me:</h2>
                                     <!-- Portfolio Modal - Text-->
                                     <ul class="text-left modal__text mb-2">
-                                            <li>I am French and spent the past 6 years in London, UK before arriving in Singapore in January '20.</li>
-                                            <li>Previously, I worked as Operations Manager and Sales Manager for one of the leading Fine Wine & Spirits supplier.</li>
-                                            <li>An active participant in the development and use of new technologies in my previous roles, I became increasingly attracted to programming.</li>
-                                            <li>I attended a course in Software Engineering at General Assembly and graduated in August '20</li>
-                                            <li>After the course, I was offered a position at General Assembly as Instructional Assistant. I helped two batches of students on making the same transition I did, explaining the same concepts I learned.</li>
+                                            <li><h5 class="about__me">I am French and spent the past 6 years in London, UK before arriving in Singapore in January '20.</h5></li>
+                                            <li><h5 class="about__me">Previously, I worked as Operations Manager and Sales Manager for one of the leading Fine Wine & Spirits supplier.</h5></li>
+                                            <li><h5 class="about__me">An active participant in the development and use of new technologies in my previous roles, I became increasingly attracted to programming.</h5></li>
+                                            <li><h5 class="about__me">I attended a course in Software Engineering at General Assembly and graduated in August '20.</h5></li>
+                                            <li><h5 class="about__me">After the course, I was offered a position at General Assembly as Instructional Assistant. I helped two batches of students on making the same transition I did, explaining the same concepts I learned.</h5></li>
+                                            <li><h5 class="about__me">I am passionate about wine, coffee, food, sports and travelling (valid hobby before COVID-19 kicked in).</h5></li>
                                     </ul>
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal1Label">My Skillset:</h2>
                                     <!-- Portfolio Modal - Text-->
                                     <div class="d-flex justify-content-center">
-                                        <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                    </ul>
+                                        <div class="mb-3"><h5 class="about__me__sub">Programming Languages & Tools</h5></div>
 
-                    
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            HTML 5, CSS 3 and JavaScript
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Node.js
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Expressjs / EJS
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Passportjs
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            React
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            MongoDB
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Ruby and Ruby on Rails
-                        </li>
-                    </ul>
-                    </br>
-                    <div class="subheading mb-3">Other</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Tools - Git, Github, Heroku, Figma, Trello, Slack
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Management and Sales
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Soft Skills - Acute communication skills, Problem solving, Strong business acumen
-                        </li>
-                    </ul>
+                                        <ul class="fa-ul mb-0">
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i> and JavaScript <i class="fab fa-js-square"></i>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Node.js <i class="fab fa-node-js"></i>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Expressjs / EJS
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Passportjs
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                React <i class="fab fa-react"></i>
+                                              </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Ruby and Ruby on Rails <i class="far fa-gem"></i>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Python <i class="fab fa-python"></i>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                MongoDB <i class="fas fa-database"></i>
+                                                </h5>
+                                            </li>
+                                        </ul>
+                                        <div class="subheading mb-3"><h5 class="about__me__sub">Other</h5></div>
+                                        <ul class="fa-ul mb-0">
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Tools - Git <i class="fab fa-git-alt"></i>, Github <i class="fab fa-github"></i>, Figma <i class="fab fa-figma"></i>, Trello <i class="fab fa-trello"></i>, Slack <i class="fab fa-slack"></i>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Management and Sales
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="about__me">
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Soft Skills - Acute communication skills, Problem solving, Strong business acumen
+                                                </h5>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -186,6 +206,46 @@
             </div>
         </div>
 
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body">
+                        
+                        <button class="accordion">My First Project - Blackjack</button>
+                        <div class="panel">
+                            <div class="[ grid ]">
+                                <div class="[ grid__col grid__col--half ]">
+                                    <p>GIF</p>
+                                </div>
+                                <div class="[ grid__col grid__col--half ]">
+                                    <p>Lorem ipsum...</p>
+                                </div>
+                            </div>
+    
+                        
+                        </div>
+
+                        <button class="accordion">Section 2</button>
+                        <div class="panel">
+                        <p>Lorem ipsum...</p>
+                        </div>
+
+                        <button class="accordion">Section 3</button>
+                        <div class="panel">
+                        <p>Lorem ipsum...</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -205,6 +265,7 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
