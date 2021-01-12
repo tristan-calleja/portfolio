@@ -434,8 +434,7 @@ p {
 
 @media all and (min-width: 60em) {
 
-    h2,
-    p {
+    h2{
         font-size: 1rem
     }
 }
@@ -619,6 +618,10 @@ a:active {
 .grid__col {
     display: block;
     width: 100%
+}
+
+.m-top-grid{
+    margin: 2% 0;
 }
 
 @media all and (min-width: 40em) {
@@ -1586,6 +1589,10 @@ button {
     font-weight: 500;
   }
 
+  .mb-adjust{
+    margin-bottom: 1.67em;
+  }
+
   .about__me__sub{
     margin: 1em 0;
     font-weight: 800;
@@ -1594,9 +1601,9 @@ button {
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
-    /* color: #444; */
+    border-radius: 5px;
     color: #4c3d6d;
-    font-size: large;
+    font-size: 25px;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -1617,4 +1624,104 @@ button {
     background-color: white;
     display: none;
     overflow: hidden;
+    
+  }
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%;
+    background-color: rgb(241, 241, 241, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  /* .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  } */
+
+  .title-projects{
+    font-size: 1.8em;
+  }
+
+  .img-projects{
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  /* Responsive layout - when the screen is less than 1000px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 1000px) {
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  }
+
+.modal-projects-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.project-desc{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.stack-wrapper{
+    margin-bottom: 1em;
+}
+
+.projects-buttons-wrapper{
+    margin: 1em 0;
+}
+
+.projects-buttons{
+    border: 4px solid black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    transition-duration: 0.4s;
+    margin: 0.5em 0;
+}
+
+.demo-button{
+    background-color: #ffba93;
+}
+
+.demo-button:hover {
+    background-color: #4c3d6d;
+    color: rgb(38, 25, 25);
+  }
+
+  .repo-button{
+    background-color: #71e2a6;
+}
+
+.repo-button:hover {
+    background-color: #4c3d6d;
+    color: rgb(38, 25, 25);
   }
