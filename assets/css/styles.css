@@ -78,7 +78,7 @@ h4 {
 
 h5 {
     font-size: 0.83em;
-    margin: 1.67em 0
+    margin: 1.67em 0;
 }
 
 h6 {
@@ -307,7 +307,7 @@ select,
 textarea {
     color: #4c3d6d;
     font-family: "Roboto Mono", monospace;
-    font-weight: 300;
+    font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* font-smooth: antialiased */
@@ -434,8 +434,7 @@ p {
 
 @media all and (min-width: 60em) {
 
-    h2,
-    p {
+    h2{
         font-size: 1rem
     }
 }
@@ -469,12 +468,15 @@ a {
     transition: .3s
 }
 
+
 a:hover,
 a:focus,
 a:active {
     color: #ffffff;
     outline: none
 }
+
+
 
 .text-link {
     color: #4c3d6d;
@@ -616,6 +618,10 @@ a:active {
 .grid__col {
     display: block;
     width: 100%
+}
+
+.m-top-grid{
+    margin: 2% 0;
 }
 
 @media all and (min-width: 40em) {
@@ -909,19 +915,26 @@ a:active {
     }
 }
 
+button {
+
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
 .colophon {
     -ms-grid-row-align: center;
     align-self: center;
     flex: 1;
     padding-top: 0.6666666667rem;
-    text-align: left
+    text-align: left;
 }
 
 .colophon__link {
     color: #4c3d6d;
     display: block;
     padding: 0 0 0.6666666667rem;
-    width: 100%
+    /* width: 100% */
 }
 
 .colophon__link:last-child {
@@ -1295,3 +1308,420 @@ a:active {
 .image-group *+* {
     margin-left: 0.6666666667rem
 }
+
+
+/* modals */
+.modal-open {
+    overflow: hidden;
+  }
+  .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    outline: 0;
+  }
+  
+  .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+  }
+  .modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -50px);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modal.fade .modal-dialog {
+      transition: none;
+    }
+  }
+  .modal.show .modal-dialog {
+    transform: none;
+  }
+  .modal.modal-static .modal-dialog {
+    transform: scale(1.02);
+  }
+  
+  .modal-dialog-scrollable {
+    display: flex;
+    max-height: calc(100% - 1rem);
+  }
+  .modal-dialog-scrollable .modal-content {
+    max-height: calc(100vh - 1rem);
+    overflow: hidden;
+  }
+  .modal-dialog-scrollable .modal-header,
+  .modal-dialog-scrollable .modal-footer {
+    flex-shrink: 0;
+  }
+  .modal-dialog-scrollable .modal-body {
+    overflow-y: auto;
+  }
+  
+  .modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+  }
+  .modal-dialog-centered::before {
+    display: block;
+    height: calc(100vh - 1rem);
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    content: "";
+  }
+  .modal-dialog-centered.modal-dialog-scrollable {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .modal-dialog-centered.modal-dialog-scrollable .modal-content {
+    max-height: none;
+  }
+  .modal-dialog-centered.modal-dialog-scrollable::before {
+    content: none;
+  }
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0 solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    outline: 0;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+  }
+  .modal-backdrop.fade {
+    opacity: 0;
+  }
+  .modal-backdrop.show {
+    opacity: 0.5;
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 0 solid #dee2e6;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  .modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+  }
+  
+  .modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+  
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 4rem 1rem;
+  }
+
+  .modal__text{
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4rem 1rem-0.25rem;
+    border-top: 0 solid #dee2e6;
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+  .modal-footer > * {
+    margin: 0.25rem;
+  }
+  
+  .modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+  }
+  
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 500px;
+      margin: 1.75rem auto;
+    }
+  
+    .modal-dialog-scrollable {
+      max-height: calc(100% - 3.5rem);
+    }
+    .modal-dialog-scrollable .modal-content {
+      max-height: calc(100vh - 3.5rem);
+    }
+  
+    .modal-dialog-centered {
+      min-height: calc(100% - 3.5rem);
+    }
+    .modal-dialog-centered::before {
+      height: calc(100vh - 3.5rem);
+      height: -webkit-min-content;
+      height: -moz-min-content;
+      height: min-content;
+    }
+  
+    .modal-sm {
+      max-width: 300px;
+    }
+  }
+  @media (min-width: 992px) {
+    .modal-lg,
+  .modal-xl {
+      max-width: 800px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .modal-xl {
+      max-width: 1140px;
+    }
+  }
+
+  /* portfolio */
+.portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: #ed8c72;
+  }
+  .portfolio-item-caption:hover {
+    opacity: 1;
+  }
+  .portfolio-item-caption .portfolio-item-caption-content {
+    font-size: 20px;
+  }
+  
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  @media (min-width: 992px) {
+    .portfolio-modal .portfolio-modal-title {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+  .portfolio-modal .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #343a40;
+    opacity: 1;
+  }
+  
+  
+  .badge-portfolio{
+    background-color: #ed8c72;
+  }
+  
+  .btn-portfolio{
+    background-color: #ed8c72;
+  }
+
+  .black__bg__link{
+      /* background: #4c3d6d; */
+      color: #4c3d6d;
+      text-decoration: underline;
+  }
+
+  .modal__text > .black__bg__link:hover{
+      color: #4c3d6d;
+      opacity: 0.6;
+  }
+
+  .details{
+    font-weight: 500;
+  }
+
+  .about__me{
+    margin: 0.5em 0;
+    font-weight: 500;
+  }
+
+  .mb-adjust{
+    margin-bottom: 1.67em;
+  }
+
+  .about__me__sub{
+    margin: 1em 0;
+    font-weight: 800;
+  }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    border-radius: 5px;
+    color: #4c3d6d;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    
+  }
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%;
+    background-color: rgb(241, 241, 241, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  /* .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  } */
+
+  .title-projects{
+    font-size: 1.8em;
+  }
+
+  .img-projects{
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  /* Responsive layout - when the screen is less than 1000px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 1000px) {
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  }
+
+.modal-projects-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.project-desc{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.stack-wrapper{
+    margin-bottom: 1em;
+}
+
+.projects-buttons-wrapper{
+    margin: 1em 0;
+}
+
+.projects-buttons{
+    border: 4px solid black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    transition-duration: 0.4s;
+    margin: 0.5em 0;
+}
+
+.demo-button{
+    background-color: #ffba93;
+}
+
+.demo-button:hover {
+    background-color: #4c3d6d;
+    color: rgb(38, 25, 25);
+  }
+
+  .repo-button{
+    background-color: #71e2a6;
+}
+
+.repo-button:hover {
+    background-color: #4c3d6d;
+    color: rgb(38, 25, 25);
+  }
