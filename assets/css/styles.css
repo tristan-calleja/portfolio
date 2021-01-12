@@ -314,7 +314,7 @@ textarea {
 }
 
 body {
-    background: url(../images/fleck-white.png), url(../images/bg.svg), #ffba93;
+    background: url(../images/fleck-white.png), #ffba93;
     background-size: auto, 100vw 100vw, auto;
     background-repeat: repeat, no-repeat, repeat;
     background-position: center center, top right, center;
@@ -667,7 +667,7 @@ a:active {
 }
 
 .logo {
-    background: url(../images/polygon.svg);
+    /* background: url(../images/polygon.svg); */
     background-size: cover;
     display: flex;
     height: 3.6666666667rem;
@@ -879,7 +879,7 @@ a:active {
 
 .ghost {
     align-self: flex-end;
-    background: url(../images/polygon.svg);
+    /* background: url(../images/polygon.svg); */
     background-size: cover;
     display: flex;
     height: 3.6666666667rem;
