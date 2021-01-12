@@ -314,7 +314,7 @@ textarea {
 }
 
 body {
-    background: url(assets/images/fleck-white.png), url(assets/images/bg.svg), #ffba93;
+    background: url(../images/fleck-white.png), url(../images/bg.svg), #ffba93;
     background-size: auto, 100vw 100vw, auto;
     background-repeat: repeat, no-repeat, repeat;
     background-position: center center, top right, center;
@@ -335,19 +335,11 @@ body {
     }
 }
 
-/* .curriculum-vitae,
-.resume {
-    background: url(/assets/images/fleck-white.png), linear-gradient(-45deg, #e2718d 25%, transparent 25%, transparent 75%, #e47994 75%, #e47994) 0 0, linear-gradient(-45deg, #e47994 25%, transparent 25%, transparent 75%, #e2718d 75%, #e2718d) 1em 1em, linear-gradient(45deg, #e47994 17%, transparent 17%, transparent 25%, #e47994 25%, #e47994 36%, transparent 36%, transparent 64%, #e47994 64%, #e47994 75%, transparent 75%, transparent 83%, #e47994 83%) 1em 1em;
-    background-color: #e2718d;
-    background-size: auto, 2em 2em, 2em 2em, 2em 2em;
-    position: relative
-} */
-
 @media all and (min-width: 45em) {
 
     .curriculum-vitae:before,
     .resume:before {
-        background: url(assets/images/fleck-white.png), linear-gradient(-45deg, #e2718d 25%, transparent 25%, transparent 75%, #71e2a6 75%, #71e2a6) 0 0, linear-gradient(-45deg, #71e2a6 25%, transparent 25%, transparent 75%, #e2718d 75%, #e2718d) 1em 1em, linear-gradient(45deg, #71e2a6 17%, transparent 17%, transparent 25%, #71e2a6 25%, #71e2a6 36%, transparent 36%, transparent 64%, #71e2a6 64%, #71e2a6 75%, transparent 75%, transparent 83%, #71e2a6 83%) 1em 1em;
+        background: url(../images/fleck-white.png), linear-gradient(-45deg, #e2718d 25%, transparent 25%, transparent 75%, #71e2a6 75%, #71e2a6) 0 0, linear-gradient(-45deg, #71e2a6 25%, transparent 25%, transparent 75%, #e2718d 75%, #e2718d) 1em 1em, linear-gradient(45deg, #71e2a6 17%, transparent 17%, transparent 25%, #71e2a6 25%, #71e2a6 36%, transparent 36%, transparent 64%, #71e2a6 64%, #71e2a6 75%, transparent 75%, transparent 83%, #71e2a6 83%) 1em 1em;
         background-color: #e2718d;
         background-size: auto, 2em 2em, 2em 2em, 2em 2em;
         content: "";
@@ -360,7 +352,7 @@ body {
 
     .curriculum-vitae:after,
     .resume:after {
-        background: url(assets/images/fleck-white.png), linear-gradient(-45deg, #e2718d 25%, transparent 25%, transparent 75%, #4c3d6d 75%, #4c3d6d) 0 0, linear-gradient(-45deg, #4c3d6d 25%, transparent 25%, transparent 75%, #e2718d 75%, #e2718d) 1em 1em, linear-gradient(45deg, #4c3d6d 17%, transparent 17%, transparent 25%, #4c3d6d 25%, #4c3d6d 36%, transparent 36%, transparent 64%, #4c3d6d 64%, #4c3d6d 75%, transparent 75%, transparent 83%, #4c3d6d 83%) 1em 1em;
+        background: url(../images/fleck-white.png), linear-gradient(-45deg, #e2718d 25%, transparent 25%, transparent 75%, #4c3d6d 75%, #4c3d6d) 0 0, linear-gradient(-45deg, #4c3d6d 25%, transparent 25%, transparent 75%, #e2718d 75%, #e2718d) 1em 1em, linear-gradient(45deg, #4c3d6d 17%, transparent 17%, transparent 25%, #4c3d6d 25%, #4c3d6d 36%, transparent 36%, transparent 64%, #4c3d6d 64%, #4c3d6d 75%, transparent 75%, transparent 83%, #4c3d6d 83%) 1em 1em;
         background-color: #e2718d;
         background-size: auto, 2em 2em, 2em 2em, 2em 2em;
         content: "";
@@ -675,7 +667,7 @@ a:active {
 }
 
 .logo {
-    background: url(assets/images/polygon.svg);
+    background: url(../images/polygon.svg);
     background-size: cover;
     display: flex;
     height: 3.6666666667rem;
@@ -887,7 +879,7 @@ a:active {
 
 .ghost {
     align-self: flex-end;
-    background: url(assets/images/polygon.svg);
+    background: url(../images/polygon.svg);
     background-size: cover;
     display: flex;
     height: 3.6666666667rem;
@@ -1120,12 +1112,12 @@ button {
 }
 
 .mask__upper:before {
-    background-image: url(assets/images/mask-tl.svg);
+    background-image: url(../images/mask-tl.svg);
     left: -0.8333333333rem
 }
 
 .mask__upper:after {
-    background-image: url(assets/images/mask-tr.svg);
+    background-image: url(../images/mask-tr.svg);
     right: -0.8333333333rem
 }
 
@@ -1136,14 +1128,14 @@ button {
 }
 
 .mask__lower:before {
-    background-image: url(assets/images/mask-bl.svg);
+    background-image: url(../images/mask-bl.svg);
     bottom: 0;
     left: -0.8333333333rem;
     top: auto
 }
 
 .mask__lower:after {
-    background-image: url(assets/images/mask-br.svg);
+    background-image: url(../images/mask-br.svg);
     bottom: 0;
     right: -0.8333333333rem;
     top: auto
